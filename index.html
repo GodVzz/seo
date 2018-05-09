@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/common.css";>
+<link rel="stylesheet" href="css/style.css";>
+<link rel="stylesheet" href="font/font_6ppib98a1auivn29/iconfont.css";>
+<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+</head>
+
+<body>
+<div class="box">
+	<div class="hard">
+		<span class="iconfont icon-caidan"><i>5</i></span>
+    	<div class="logo">
+    		<img src="img/logo.gif";>
+    	</div>
+	</div>
+    <div class="xia">
+    	<img src="img/guidao.jpeg";>
+        <p>Jesica Alba</p>
+        <span class="iconfont icon-weizhi"><i>Los Angeles, CA</i></span>
+        <h2 class="iconfont icon-shijian"><i>2m</i></h2>
+        
+    </div>
+    <div class="xia2">
+   		<div class="left fl">
+        	<img src="img/guidao2.jpg";>
+        	<p>Shawn Corey Carter</p>
+            <span class="iconfont icon-weizhi"><i>Brooklyn, NY</i></span>
+        </div>
+        <div class="right fr">
+        	<ul>
+            	<li class="iconfont icon-aixin"></li>
+                <li class="iconfont icon-huifukuangxinjiantaolun"></li>
+                <li class="iconfont icon-fanhui"></li>
+            </ul>
+            <span class="iconfont icon-more2"></span>
+        </div>
+    </div>
+    <div class="xia3">
+    	<p></p>
+    </div>
+</div>
+</body>
+</html>
